@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_bar_post_task"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_bar_new_task"
+        android:title="@string/navigation_bar_post_task_label"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/nav_bar_my_task"
+        android:icon="@drawable/ic_nav_bar_my_task"
+        android:title="@string/navigation_bar_my_tasks_label"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/nav_bar_browse_tasks"
+        android:icon="@drawable/ic_nav_bar_browse"
+        android:title="@string/navigation_bar_browse_label"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/nav_bar_messages"
+        android:icon="@drawable/ic_nav_bar_messages"
+        android:title="@string/navigation_bar_messages_label"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/nav_bar_more"
+        android:icon="@drawable/ic_nav_bar_more"
+        android:title="@string/navigation_bar_more_label"
+        app:showAsAction="always|withText" />
+</menu>

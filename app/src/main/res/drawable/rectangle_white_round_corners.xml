@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item n1:state_focused="true" n1:state_enabled="false"
+      xmlns:n1="http://schemas.android.com/apk/res/android">
+        <shape n1:shape="rectangle">
+            <solid n1:color="@color/grey1" />
+            <stroke n1:width="1.0dip" n1:color="@color/airtasker_primary_color" />
+            <corners n1:radius="@dimen/corner_radius" />
+        </shape>
+    </item>
+    <item n2:state_focused="true" n2:state_enabled="true"
+      xmlns:n2="http://schemas.android.com/apk/res/android">
+        <shape n2:shape="rectangle">
+            <solid n2:color="@android:color/white" />
+            <stroke n2:width="1.0dip" n2:color="@color/airtasker_primary_color" />
+            <corners n2:radius="@dimen/corner_radius" />
+        </shape>
+    </item>
+    <item n3:state_enabled="false"
+      xmlns:n3="http://schemas.android.com/apk/res/android">
+        <shape n3:shape="rectangle">
+            <solid n3:color="@color/grey1" />
+            <stroke n3:width="1.0dip" n3:color="@color/grey3" />
+            <corners n3:radius="@dimen/corner_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape n4:shape="rectangle"
+          xmlns:n4="http://schemas.android.com/apk/res/android">
+            <solid n4:color="@android:color/white" />
+            <stroke n4:width="1.0dip" n4:color="@color/grey3" />
+            <corners n4:radius="@dimen/corner_radius" />
+        </shape>
+    </item>
+</selector>

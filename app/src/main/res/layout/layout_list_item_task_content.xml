@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:layout_marginLeft="@dimen/medium"
+            android:layout_marginRight="@dimen/medium"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardElevation="2dip"
+            card_view:cardBackgroundColor="@color/white">
+
+            <View
+                android:id="@+id/list_item_task_view_ribbon"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/airBlue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/small">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/large"
+                    android:paddingTop="@dimen/large"
+                    android:paddingRight="@dimen/medium"
+                    android:paddingBottom="@dimen/medium">
+
+                    <TextView
+                        android:id="@+id/list_item_task_text_view_task_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/small"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="Apple and Android Application"
+                        android:textAppearance="@style/TextAppearanceBase.Body.Medium"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/grey5"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/small"
+                        android:layout_marginBottom="@dimen/small">
+
+                        <TextView
+                            android:id="@+id/list_item_task_text_view_task_truck_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:drawablePadding="@dimen/small"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="No of Trucks"
+                            android:textAppearance="@style/TextAppearanceBase.Caption1"
+                            android:textSize="@dimen/text_size_small"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"
+                            android:tint="@color/grey5"/>
+
+                        <TextView
+                            android:id="@+id/list_item_task_text_view_task_labor_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/small"
+
+                            android:drawablePadding="@dimen/small"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="No of Labors"
+                            android:textAppearance="@style/TextAppearanceBase.Caption1"
+                            android:textSize="@dimen/text_size_small"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/list_item_task_text_view_task_spec"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/small"
+                        android:layout_marginBottom="@dimen/small"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Open Truck, 3 Ton, 10 Feet"
+                        android:textAppearance="@style/TextAppearanceBase.Caption1"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"/>
+
+                    <TextView
+                        android:id="@+id/list_item_task_text_view_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                             android:drawablePadding="@dimen/small"
+                        android:layout_marginBottom="@dimen/small"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Remote"
+                        android:textAppearance="@style/TextAppearanceBase.Caption1"
+                        android:textSize="@dimen/text_size_small"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"/>
+
+                    <TextView
+                        android:id="@+id/list_item_task_text_view_drop_off_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearanceBase.Caption1"
+                        android:drawablePadding="@dimen/small"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Remote"
+                        android:textSize="@dimen/text_size_small"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"/>
+
+                    <TextView
+                        android:id="@+id/list_item_task_text_view_deadline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/small"
+                          android:drawablePadding="@dimen/small"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Monday,Jul 11,2018"
+                        android:textAppearance="@style/TextAppearanceBase.Caption1"
+                        android:textSize="@dimen/text_size_tiny"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"/>
+
+                    <TextView
+                        android:id="@+id/list_item_task_text_view_timeline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small"
+
+                        android:drawablePadding="@dimen/small"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Monday,Jul 11,2018"
+                        android:textAppearance="@style/TextAppearanceBase.Caption1"
+                        android:textSize="@dimen/text_size_tiny"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="0dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/list_item_task_view_layout_admin_task_owner_or_kam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small"
+                        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/large"
+                        android:paddingTop="@dimen/tiny"
+                        android:paddingBottom="@dimen/small"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/list_item_task_text_view_owner_name"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".4"
+
+                            android:drawablePadding="@dimen/small"
+                            android:ellipsize="end"
+                            android:text="Owner Name"
+                            android:textAppearance="@style/TextAppearanceBase.Caption1"
+                            android:textSize="@dimen/text_size_tiny"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"
+                            android:visibility="gone"/>
+
+
+                        <TextView
+                            android:id="@+id/list_item_task_text_view_kam_name"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".6"
+                            android:drawablePadding="@dimen/small"
+                            android:layout_marginLeft="@dimen/very_large"
+                            android:ellipsize="end"
+                            android:text="KAM Name"
+                            android:textAppearance="@style/TextAppearanceBase.Caption1"
+                            android:textSize="@dimen/text_size_tiny"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="0dp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list_item_task_view_layout_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small"
+                        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/large"
+                        android:paddingRight="@dimen/large"
+                        android:paddingTop="@dimen/tiny"
+                        android:paddingBottom="@dimen/tiny"
+                        android:background="@drawable/rounded_button_taskstatus_blue">
+
+                        <TextView
+                            android:id="@+id/list_item_task_state_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="OPEN"
+                            android:textAppearance="@style/TextAppearanceBase.SmallTitle"
+                            android:textSize="@dimen/text_size_tiny" />
+
+                        <TextView
+                            android:id="@+id/list_item_task_text_view_additional_information"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearanceBase.SmallTitle"
+                            android:textSize="@dimen/text_size_tiny" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/list_item_task_lin_lay_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/medium"
+                    android:background="@drawable/shape_bg_right_curve_round"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/list_item_task_text_view_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/tiny"
+                        android:paddingLeft="@dimen/medium"
+                        android:paddingTop="@dimen/small"
+                        android:paddingRight="@dimen/medium"
+                        android:paddingBottom="@dimen/small"
+                        android:text=" ৳2000"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_headline" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/large"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/list_item_task_first_name"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_circular_pink_bg_view"
+            android:gravity="center"
+            android:text="TX"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:textAllCaps="true"/>
+
+        <com.example.testmvp.widget.AvatarCircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/list_item_task_avatar_widget"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center|end|bottom"
+            app:civ_border_color="@color/color_grey_300"
+            app:civ_border_width="1dp"
+            app:srcCompat="@drawable/avatar_placeholder_circular"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</RelativeLayout>
